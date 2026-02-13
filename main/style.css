@@ -2,6 +2,9 @@
 
 /* !-общие стили */
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -37,7 +40,7 @@ p + p {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -148,9 +151,6 @@ p + p {
   gap: 40px 10px;
 }
 
-.container {
-}
-
 .food-list__card {
   overflow: hidden;
   text-align: center;
@@ -180,3 +180,126 @@ p + p {
 }
 
 /* бургер */
+
+.order {
+  background: #312f30;
+  padding: 60px 0;
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
+}
+/* 
+.order__img {
+  
+} */
+
+.order__text {
+  max-width: 370px;
+}
+
+.burger__title {
+  font-size: 44px;
+}
+
+.order__desc {
+  opacity: 0.7;
+  padding: 20px 0;
+}
+
+.order__price {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+  margin-right: 5px;
+}
+
+.order__old-price {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+  text-decoration: line-through;
+  color: #f6762c;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.product {
+  padding: 150px 0;
+}
+
+.product .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product__card {
+  width: 555px;
+  min-height: 300px;
+  padding: 60px 30px 60px 290px;
+  background-color: #fff;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__card:nth-child(even) {
+  padding-left: 30px;
+  padding-right: 290px;
+}
+
+.product__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.product__desc {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.product__price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.product__old-price {
+  opacity: 0.5;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: line-through;
+  color: #f6762c;
+  margin-left: 10px;
+}
+
+.product .btn--small {
+  width: 141px;
+  height: 39px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.card-queen {
+  background-image: url(/images/product-1.jpg);
+}
+.card-king {
+  background-image: url(/images/product-3.jpg);
+}
+.card-hut {
+  background-image: url(/images/product-4.jpg);
+}
+.card-papa {
+  background-image: url(/images/product-2.jpg);
+}
+
